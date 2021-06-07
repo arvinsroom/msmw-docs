@@ -19,6 +19,13 @@ The Mock Social Media Website Tool is an open-source tool for conducting experim
 * Collect data for participants using any device, for readers of any language, and for participants with any accessibility requirements
 * Dynamically give participants individualized feedback based on their interactions with the simulated social media posts within the studies you create
 
+
+## Try it yourself!
+
+Sometimes, it's easier to show than tell. That is why we have created a demonstration study for you to try out to show and guide you through the capabilities of the tool.
+
+[Click here to try the demonstration study!](https://studysocial.media/919457)
+
 ## What studies is the for?
 
 Here are some examples of the kinds of studies that are well-suited to the use of the tool:
