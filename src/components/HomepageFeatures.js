@@ -4,32 +4,29 @@ import styles from './HomepageFeatures.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('../../static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Simulate a social media experience',
+    Svg: require('../../static/img/home-simulate-a-social-media-experience.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Create an interactive social media timeline that closely mimics the real experience of using those social media platforms, including using participants' submitted usernames and profile photos.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('../../static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Easily set up and customize',
+    Svg: require('../../static/img/home-easily-set-up-and-customize.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        After setting up, everything from creating studies to downloading the resulting data is handled using a researcher portal with a guided user interface. Changes in the portal are immediately reflected for participants.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('../../static/img/undraw_docusaurus_react.svg').default,
+    title: 'Modular and Extensible',
+    Svg: require('../../static/img/home-modular-and-extensible.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Researchers can easily create and rearrange various components of studies like building blocks, and developers can easily integrate new building blocks (e.g., new simulated social media platforms) in the future.
       </>
     ),
   },

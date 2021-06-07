@@ -1,31 +1,35 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  url: 'https://your-docusaurus-test-site.com',
+  title: 'Mock Social Media Website Tool',
+  tagline: 'An open-source tool for conducting experimental, ecologically-valid research on social media behaviour.',
+  url: 'https://docs.studysocial.media',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'arvinsroom', // Usually your GitHub org/user name.
+  projectName: 'msmw-docs', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'My Site',
+      title: 'Mock Social Media Website Tool',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'Mock Social Media Website Tool Logo',
+        src: 'img/logo-mocksocial-heads-32.png',
       },
       items: [
         {
           type: 'doc',
           docId: 'intro',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Guides',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
+        {to: '/research', label: 'Research', position: 'left'},
+        {to: '/people', label: 'People', position: 'left'},
+        {to: '/citation', label: 'Citation', position: 'left'},
+        {to: '/contact', label: 'Contact', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/arvinsroom/mocksocialmediawebsite',
           label: 'GitHub',
           position: 'right',
         },
@@ -35,46 +39,46 @@ module.exports = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Guides',
           items: [
             {
-              label: 'Tutorial',
+              label: 'Get Started',
               to: '/docs/intro',
             },
+            {
+              label: 'Deploying Locally',
+              to: '/docs/deploying-locally',
+            },
+            {
+              label: 'Deploying Online',
+              to: '/docs/deploying-online/domain-name',
+            },
           ],
         },
         {
-          title: 'Community',
+          title: 'Stay Connected',
           items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
             {
               label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              href: 'https://twitter.com/rvinsroom',
             },
           ],
         },
         {
-          title: 'More',
+          title: 'Important Links',
           items: [
             {
-              label: 'Blog',
-              to: '/blog',
+              label: 'Source Code',
+              to: 'https://github.com/arvinsroom/mocksocialmediawebsite',
             },
             {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: 'Open Science Framework Project',
+              href: 'https://osf.io/m2xd8/',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Arvin Jagayat. Built with Docusaurus.`,
     },
   },
   presets: [
@@ -85,13 +89,13 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+            'https://docs.studysocial.media/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+            'https://docs.studysocial.media/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
