@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Introduction
 
-![Wordmark for the Mock Social Media Website Tool](/img/logo-wordmark.jpg)
+<iframe width="100%" height="315px" src="https://www.youtube.com/embed/hlVTSlL0pkI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## What is the Mock Social Media Website Tool?
 
@@ -19,12 +19,17 @@ The Mock Social Media Website Tool is an open-source tool for conducting experim
 * Collect data for participants using any device, for readers of any language, and for participants with any accessibility requirements
 * Dynamically give participants individualized feedback based on their interactions with the simulated social media posts within the studies you create
 
-
 ## Try it yourself!
 
 Sometimes, it's easier to show than tell. That is why we have created a demonstration study for you to try out to show and guide you through the capabilities of the tool.
 
-[Click here to try the demonstration study!](https://studysocial.media/919457)
+[Click here and input any six-digit number as your participant ID to try the demonstration study!](https://studysocial.media/919457)
+
+## Watch the webinar
+
+You can watch a recording of the webinar for the tool, going into depth about it's capabilities below. Slides for the webinar are available [here](https://osf.io/mrwqs/).
+
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/XJIUOrE55gU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## What studies is the for?
 

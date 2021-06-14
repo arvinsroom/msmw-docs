@@ -28,6 +28,8 @@ This would not have been possible without the many people and organizations that
 
 [Isabella Lam](https://sites.psychlabs.ryerson.ca/spplab/portfolio/isabella-lam/) is the Lab Manager of the [Social and Political Psychology Lab](https://sites.psychlabs.ryerson.ca/spplab/). Isabella has assisted in shaping and thoroughly testing the tool throughout the duration of the project.
 
+Lastly, we would like to thank the various research assistants who have helped this project at one stage or another: Maisha Ahasan, Viktoria Arazyan, Jonah Davids, Morgan Lindsay, Samantha Lu, Alessandra Miceli, Jasmine Philip, David Sumantry, and Robert Valela.
+
 ## Funding
 
 We are extremely grateful that funding for the development of this tool was provided by the Digital Citizen Contribution Program by the [Department of Canadian Heritage](https://www.canada.ca/en/canadian-heritage.html) of the Government of Canada.
