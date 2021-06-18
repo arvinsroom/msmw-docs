@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 # Overview
@@ -24,13 +24,10 @@ We selected AWS because of the ease of use for newcomers, but the tool can feasi
 
 ## How to read this documentation
 
-The first thing you need to decide is whether you will be running your study locally or online. On the next page, you will read about the software requirements for deploying the study locally or online, many of which are shared.
+The first thing you need to decide is whether you will be running your study locally or online. From there, you will read either the sections on deploying locally and deploying online. Once your website is deployed and you are able to login to the admin portal, the section on configuring your study will guide you through how to create and specify your particular study.
 
-From there, you will read either the sections on deploying locally and deploying online. Once your website is deployed and you are able to login to the admin portal, the section on configuring your study will guide you through how to create and specify your particular study.
+There are alsp several things to consider while reading through this documentation. This documentation:
 
-## Important considerations
-
-There are several things to consider while reading through this documentation. This documentation:
-
+* Was written with Windows devices in mind because that is practically what is available for us to test on, but offers alternative steps for Mac or Linux users where possible. Most of the steps are operating-system agnostic.
 * Will not provide its own comprehensive tutorials for using the software and coding languages that are referenced throughout it. Many of these already exist elsewhere, and will be linked to where relevant, but we will always try to give all the information you need to get things up and running.
 * Will make some recommendations for various software (e.g., Visual Studio Code) and services (e.g., AWS) to use to make the experience easy for people with limited technical experience. In some cases, these software are required because they are required for deploying the tool. In other cases, there are several tools we recommend based on our experience, but can be interchanged with other software that serves the same purpose. We have received no compensation for, nor are affiliated with any of the software we recommend.
