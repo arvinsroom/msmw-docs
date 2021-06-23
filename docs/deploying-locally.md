@@ -191,7 +191,6 @@ To update the tool in the future, you again have two options based on which opti
 
 The first option is to return to the GitHub repository and redownload the code in a zip file and overwrite the existing files on your computer when extracting it. This may overwrite some of the files you have modified to set up the tool, however, such as the **package.json** and **config-development.json** files. What you can do is copy those elsewhere before overwriting, and then copy (and overwrite) them back to their original locations after you have updated to avoid inputting all of the same information again.
 
-
 ### Option 2: Git pull
 
 The easier and less error-prone way of updating if you downloaded the files using Option 2 above is to open a Bash terminal in the mocksocialmediawebsite-main folder (should be the default folder if you use the arrow next to the plus icon in the Terminal panel) and input the following command: `git pull https://github.com/arvinsroom/mocksocialmediawebsite.git`. This will automatically update all of the files that need updating, but, like Option 1 above, may overwrite files you have modified in earlier steps, so you can save the **package.json** and **config-development.json** files elsewhere before updating, then copy (and overwrite) the updated files after you have updated to avoid inputting all of the same information again.

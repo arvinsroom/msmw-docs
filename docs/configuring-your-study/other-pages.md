@@ -24,9 +24,7 @@ For each field:
 * **Custom Field Reference Name** indicates what variable the data from this field is assigned to. Simply, only fields that are connected to a variable are able to be used in other parts of the website. For example, only if an image field references the profile photo variable will it be used for participants' profile photos in a subsequent social media page.
 
 :::info Storing identifying information
-
 If you choose to store responses to the database, please make sure that participants receive sufficient informed consent.
-
 :::
 
 ## Information

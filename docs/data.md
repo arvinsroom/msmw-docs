@@ -48,7 +48,7 @@ The .csv data contains a subset of what we believe is the most important data fr
     * The custom field reference name (e.g., the type of data, such as `HANDLE` for Twitter or `PROFILE PHOTO`)
     * The value that the participants input into the field. For images, this will be a value of `-9999` and the associated image when you go to download media will be named after the unique field ID.
 
-:::Participant-generated Post IDs
+:::caution Participant-generated Post IDs
 If you see extra-long post IDs that show up in your data and (likely) are not ones you assigned to post stimuli, these are posts that participants made themselves. Every time a participant posts, their post is automatically assigned a randomly generated and very long post ID. Thus, if you see a long post ID that looks something like `18b97229-d945-46f1-aeec-947ba9f1b165` in the `LIKE` column, it means that participants made a new post and then liked their own post.
 :::
 
