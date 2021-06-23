@@ -4,6 +4,9 @@ sidebar_position: 10
 
 # Frequently Asked Questions
 
+**Is the tool open-source? What are the rules for using. modifying, and redistributing the tool?**
+> Yes! This project is licensed under the [Apache License 2.0](https://choosealicense.com/licenses/apache-2.0/). The choice of license was based on the software dependencies that the tool is based upon, and you can read the license at the link to better understand the rights for use.
+
 **Do you have examples of materials that I can use or modify when putting together an ethics application to submit to my IRB/REB?**
 > Yes! You can check out [the OSF project page](https://osf.io/m2xd8/files/) to find them. Please note that the files here were used for a pre-release version of the tool, so some things may differ from the version available now.
 

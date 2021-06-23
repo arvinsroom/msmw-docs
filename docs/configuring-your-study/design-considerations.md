@@ -6,6 +6,14 @@ sidebar_position: 10
 
 Below are some things to consider for your study design, based on what we have learned from developing the tool and deploying studies using it.
 
+## Technical Considerations
+
+There are a few technical limitations of and design choices made for the tool that may affect the participant experience and can help diagnose if participants are having errors.
+
+First, participants can only keep the browser tab for the study open for 24 hours after they first open it before it kicks them out. After this time, they will have to begin the study from the start because their access token will have expired.
+
+Second, if participants refresh the page, they will have to begin the study from the start (from entering their participant ID) because the tool will boot them out. Upon clicking refresh, participants receive a browser prompt which warns them of this.
+
 ## Study Structure
 
 ### Avoiding unnecessary collection of identifying data

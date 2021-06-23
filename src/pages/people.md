@@ -30,8 +30,13 @@ This would not have been possible without the many people and organizations that
 
 Lastly, we would like to thank the various research assistants who have helped this project at one stage or another: Maisha Ahasan, Viktoria Arazyan, Jonah Davids, Morgan Lindsay, Samantha Lu, Alessandra Miceli, Jasmine Philip, David Sumantry, and Robert Valela.
 
+## Want to contribute?
+
+The open-source nature of this tool means that we are constantly looking for and want to encourage people to contribute to the tool, or make us aware of funding opportunities that can help us fund its future development. If you are interested in contributing or know of funding opportunities, please don't hesitate to [e-mail Arvin](mailto:arvin.jagayat@ryerson.ca) and let him know!
+
 ## Funding
 
-We are extremely grateful that funding for the development of this tool was provided by the Digital Citizen Contribution Program by the [Department of Canadian Heritage](https://www.canada.ca/en/canadian-heritage.html) of the Government of Canada.
+We are extremely grateful that funding for the development of this tool was provided by the Digital Citizen Contribution Program by the [Department of Canadian Heritage](https://www.canada.ca/en/canadian-heritage.html) of the Government of Canada. Additionally, Arvin Jagayat is supported in part by funding from the Social Sciences and Humanities Research Council.
 
-![Funded by the Government of Canada](/img/funding-small.png)
+![Funded by the Government of Canada](/img/funding-heritage.png)
+![Funded by the Government of Canada](/img/funding-sshrc.png)

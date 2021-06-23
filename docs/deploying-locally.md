@@ -48,13 +48,19 @@ During installation:
 * **Product Configuration:** Click **Next**.
 * **Type and Networking:** Leave the defaults and click **Next**.
 * **Authentication Method:** Keep it on "Use Strong Password Encryption for Authentication (RECOMMENDED)" and click **Next**.
-* **Accounts and Roles:** Input **rootboot** as your MySQL Root Password (you also have to repeat it in the next Repeat Password field) and click **Next**. The password that you use here can be whatever you wish based upon what you have configured in the config file, but we're using the default for now. If you are deploying locally, it doesn't matter that much.
+* **Accounts and Roles:** Type in whatever you would like your MySQL Root Password to be (you also have to repeat it in the next Repeat Password field), copy it somewhere (you will need it later), and click **Next**.
 * **Windows Service:** Leave the defaults and click **Next**.
 * **Apply Configuration:** Click **Execute**. When done, click **Finish**.
 * **Product Configuration:** Click **Next**.
 * **Installation Complete:** Click **Finish**.
 
 If you followed the steps above, you have successfully installed a local MySQL server and configured the database for the tool to hook into, and are ready to download and set up the tool's code.
+
+### Git and Bash
+
+[Download here](https://git-scm.com/downloads) (installs both Git and Bash together).
+
+Git is distributed version control software; essentially allowing for quick and efficient ways for multiple people to download, update, and upload files or just select parts of file, which makes it ideal for handling code. Bash is a command-line language which allows you to execute various commands on your device and run scripts. You can watch a short video on how to install Git [here](https://youtu.be/SWYqp7iY_Tc?t=344).
 
 ## Downloading the code
 
@@ -72,9 +78,7 @@ Once this is extracted, open up Visual Studio Code. You should see a "Getting St
 
 Cloning the GitHub repository using Git is more complicated and takes more time, but makes it painless to update in the future when the source code is updated (e.g., with bugfixes or new features). If you encounter difficulties, you can read more about the process of cloning GitHub repositories [here](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository).
 
-To do so, you will need to install [Git](https://git-scm.com/). Git is a distributed version control software; essentially allowing for quick and efficient ways for multiple people to download, update, and upload code.
-
-Next, create a folder on your device where you want the tool to be downloaded to. It doesn't matter what it is called, but to make going through this guide easier, name it `mocksocialmediawebsite-main`.
+First, create a folder on your device where you want the tool to be downloaded to. It doesn't matter what it is called, but to make going through this guide easier, name it `mocksocialmediawebsite-main`.
 
 Once you have Git installed and your folder created, open up Visual Studio Code. You should see a "Getting Started" document open in Visual Studio Code if this is your first time using it. Using the menu at the top, click **File -> Open Folder...** and open the folder that you just created.
 
@@ -88,11 +92,58 @@ You now have downloaded the core files you need for the tool, which you just nee
 
 ## Final tweaks
 
-Third, before we turn the tool on, we will need to install some dependencies for the tool and do some simple tweaks to make it suitable for running locally. In the Explorer panel on the left side of the screen, you will see all of the folders and files for the tool within the mocksocialmediawebsite-main folder.
+Third, before we turn the tool on, there are some final modifications and small things we need to do before the tool will work locally. Much of this is done through the **Explorer** panel on the left side of the screen in Visual Studio Code. Here, you will see all of the folders and files for the tool within the mocksocialmediawebsite-main folder. Folders have little arrows next of them which allow you to expand or collapse their contents.
+
+### Increase the maximum packet size
+
+Before we jump into Visual Studio Code, however, we will need to increase the default maximum of information that can be transmitted to and from the server at any given time from 4MB to 20MB. This makes it easier to upload media associated with your posts and prevents issues with participants uploading files larger than 4MB (e.g., large photos, videos).
+
+How you do this is by modifying the **my.ini** file that is created once MySQL is installed on your computer. The default location for this file for Windows installs is `C:\ProgramData\MySQL\MySQL Server 8.0\my.ini`. You can open this file using Notepad (Windows), TextEdit (Mac), or any code editing software. If you are on Windows, you may not be able to edit this file unless you are are opening it as an administrator. To do this, you can hit the <kbd>Windows</kbd>, search for Notepad, right-click it in the start menu, and run as administrator. Then, in Notepad, open the file by navigating to its location and displaying **All files (*.*)** instead of just text documents when you are in the folder.
+
+Once the **my.ini** file is open, scroll down until you see where it says `max_allowed_packet=4M` and change it to `max_allowed_packet=20M`. Save the file.
+
+Next, you need to restart the MySQL service. On Windows, you can do this by hitting <kbd>Windows</kbd> + <kbd>R</kbd> and typing `services.msc` into the Run window that opens up and clicking OK. In the services panel, scroll down and select **MySQL80**, then click **Stop the service**, followed by **Start the service**. On Mac, go into your **System Preferences** and you should see **MySQL** at the bottom of the page. Upon clicking it, you are taken to a page where, on the right, you have a button to stop and then start the MySQL service again.
+
+### Create the db folder
 
 Right- (or if on Mac, Option-) click the **backend** folder and click **New Folder**. Name this folder `db`.
 
-If you are on Windows, in the **Explorer** panel on the left side of the screen, you will need to open up the **package.json** file in the **backend** folder. When you click this file, it should open up as a tab in the main panel. Under `"scripts"`, find the line that starts with `"local-dev":`. Here, you will need to delete the `npm run clean-db && ` from the values in the quotes, including the space after the &&. What this line should look like is `"local-dev": "npm run copy-dev-config && npm run watch:webpack-build-dev"` Once you have done this, press <kbd>Ctrl</kbd> + <kbd>S</kbd> to save the package.json file.
+### Remove code from the package.json file (Windows only)
+
+If you are on Windows, in the **Explorer** panel on the left side of the screen, you will need to open up the **package.json** file in the **backend** folder. When you click this file, it should open up as a tab in the main panel. Under `"scripts"`, find the line that starts with `"local-dev":`. Here, you will need to delete the `npm run clean-db && ` from the values in the quotes, including the space after the &&. What the value on this line should look like is `"local-dev": "npm run copy-dev-config && npm run watch:webpack-build-dev"`. Once you have done this, press <kbd>Ctrl</kbd> + <kbd>S</kbd> to save the package.json file.
+
+### Link to the database and set up researcher accounts
+
+In the **backend** folder, there is also a file called **config-development.json** that you should click on and open. You will need to add values to all of these fields (in the quotes after the colons) for the website to work.
+
+* **database**
+    * **name** can be anything you want it to be without any spaces.
+    * **username** needs to be `root`.
+    * **password** needs to be the password you created when installing MySQL.
+    * **host** needs to be `localhost`.
+    * **port** can be any value you choose, but we recommend you use the default of `3306`.
+    * **dialect** needs to be `mysql`.
+
+Below this, you can specify as many researcher accounts as you would like, using the following format, and including no spaces:
+
+```
+  "adminCredentials": [
+    {
+      "username": "researcher1",
+      "password": "password1"
+    },
+    {
+      "username": "researcher2",
+      "password": "password2"
+    },
+    {
+      "username": "researcher3",
+      "password": "password3"
+    }
+  ],
+```
+
+### Install dependencies
 
 Next, right-click the **backend** folder and click **Open in Integrated Terminal**. What this will do is open a Terminal panel at the bottom of the screen that is ready for you to input commands. In the opened terminal, type `npm install` and hit <kbd>Enter</kbd>. Repeat this npm installing process for for the **frontend** folder. You can switch between these open terminals using the dropdown at the top-right of the Terminal panel, which is helpful to know for deploying the tool.
 
@@ -102,15 +153,15 @@ You will need to replace the `npm` in the command with the pathway to the locati
 
 You should now have the local file configuration ready to deploy the tool locally and turn it on and off whenever you wish. You will not need to repeat any of the steps above again when you want to turn on or off the tool.
 
-### 
-
 ## Deploying
 
 Deploying the study requires turning on the backend (i.e., the parts of the website that interface with the database) and frontend of the website (i.e., the parts of the website you can see and interact with) one-by-one. It does not matter which order you do this in, but both need to be done for you to be able to use the tool.
 
+Once turned on for the first time, your data will remain in the database even after you turn it off. So when you turn the tool on again, your conditions and data should all still be there.
+
 ### Turning on the backend
 
-In the backend terminal, type `npm run local-dev` and hit <kbd>Enter</kbd>.
+Open a new Bash terminal using the arrow next to the plus button in the Terminal panel. In it, type `cd backend/` and hit <kbd>Enter</kbd>. Now, your terminal has navigated from the main folder to the backend folder. Next, type `npm run local-dev` and hit <kbd>Enter</kbd>. You will know that it is sucessfully turned on when you see the terminal output `Server is running on port 8081.`.
 
 #### If you could not add node to your path variable when installing and are getting errors
 
@@ -118,13 +169,11 @@ You will need to install [Cygwin](https://www.cygwin.com/). When installing, kee
 
 ### Turning on the frontend
 
-In the frontend terminal, type `npm run start-dev` and hit <kbd>Enter</kbd>.
+Similar to turning on the backend, you will need to navigate into the frontend by opening a new Bash terminal and typing in `cd frontend/` and hit <kbd>Enter</kbd>. Now that you have navigated into the frontend folder, type `npm run start-dev` and hit <kbd>Enter</kbd>. Before it is completely done turning on, https://localhost:8080/ - the location of the tool - will open up in your default browser, even though it is not done turning on and building the frontend. In the meantime, return to Visual Studio Code, where you will know the frontend is done turning on when you see the terminal output `i ｢wdm｣: Compiled successfully.`.
 
 ### Success!
 
-Once you turn on the frontend, your default browser should automatically open up http://localhost:8080/ which is the main URL of your deployed tool! **Congratulations, your tool is live!** The tool is deployed via your browser, but exists entirely locally on your device. You can now go to http://localhost:8080/admin and log in using the default admin credentials:
-* Username: `test`
-* Password: `testtest`
+**Congratulations, your tool is live at http://localhost:8080/ !** The tool is deployed via your browser, but exists entirely locally on your device. You can now go to http://localhost:8080/admin and log in using the username and password of an admin/researcher account that you set up.
 
 You can change what these credentials are, or how many administrator accounts there are, by clicking, modifying, and then saving (by pressing <kbd>Ctrl</kbd> + <kbd>S</kbd>) the **config-development.json** file in **backend** folder in Visual Studio Code.
 
@@ -132,10 +181,21 @@ The backend and frontend will continue to run as long as you have these terminal
 
 ### Turning off the tool
 
-To deactivate the backend and/or the frontend, press <kbd>Ctrl</kbd> + <kbd>C</kbd> on your keyboard in their respective terminals. It is good practice to deactivate each when you are done collecting participants in a session so that they are not taking up unnecessary resources on your device.
+To deactivate the backend and/or the frontend, press <kbd>Ctrl</kbd> + <kbd>C</kbd> on your keyboard in their respective terminals. It is good practice to deactivate each when you are done collecting participants in a session so that they are not taking up unnecessary resources on your device. However, when you turn off either, your conditions and data are unaffected and should all still be there.
 
 ## Updating the code
 
-To update the tool in the future, open a git bash terminal in the mocksocialmediawebsite-main folder (should be the default folder if you use the arrow next to the plus icon in the Terminal panel) and input the command `git pull https://github.com/arvinsroom/mocksocialmediawebsite.git`. Please note that when you do this, it may overwrite files you have modified (e.g., admin credentials, tweaks to work locally or on Windows) which you may have to repeat. It is recommended that you save all the study data prior to updating the code, as changes could affect the database.
+To update the tool in the future, you again have two options based on which option you chose when downloading the code earlier. It is recommended that you save all the study data prior to updating the code, as changes could affect your ability to access the database database.
+
+### Option 1: Redownload, unzip, and overwrite
+
+The first option is to return to the GitHub repository and redownload the code in a zip file and overwrite the existing files on your computer when extracting it. This may overwrite some of the files you have modified to set up the tool, however, such as the **package.json** and **config-development.json** files. What you can do is copy those elsewhere before overwriting, and then copy (and overwrite) them back to their original locations after you have updated to avoid inputting all of the same information again.
+
+
+### Option 2: Git pull
+
+The easier and less error-prone way of updating if you downloaded the files using Option 2 above is to open a Bash terminal in the mocksocialmediawebsite-main folder (should be the default folder if you use the arrow next to the plus icon in the Terminal panel) and input the following command: `git pull https://github.com/arvinsroom/mocksocialmediawebsite.git`. This will automatically update all of the files that need updating, but, like Option 1 above, may overwrite files you have modified in earlier steps, so you can save the **package.json** and **config-development.json** files elsewhere before updating, then copy (and overwrite) the updated files after you have updated to avoid inputting all of the same information again.
+
+**Wherever possible, it is important that you are always using the latest version of the code, which will always coincide with updated documentation on this website.**
 
 If you're having issues, you can learn more about the git pull and related commands [here](https://github.com/git-guides/git-pull).
