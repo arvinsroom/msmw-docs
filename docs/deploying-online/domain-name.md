@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-sidebar_label: Domain Name
+sidebar_label: Getting a Domain Name
 ---
 
 # Getting a Domain Name
@@ -21,8 +21,6 @@ Buying your own domain name is super easy, but there are a few things you need t
 
 There are many registrars that will sell you a domain name, such as [Google Domains](https://domains.google/) and [Gandi](https://www.gandi.net/en). I personally use [Namecheap](https://www.namecheap.com/) because they offer Whois privacy protection complimentary for all domain name purchases made with them. The particular domain name you are looking from will often vary in price from registrar to registrar, and you can use [this website](https://tld-list.com/) to compare prices for different top-level domains if you know which one you will be going with.
 
-It is important that wherever you buy, that you ensure that you have **WHOIS privacy protection** and **SSL certificates**. WHOIS Privacy Protection protects people from finding out who you are and your contact information required to register a domain name, and SSL certificates provide security for participants visiting your website.
+It is important that wherever you buy, that you ensure that you have **Whois privacy protection** and an **SSL certificate**. Whois Privacy Protection protects people from finding out who you are and your contact information required to register a domain name. SSL certificates provide security for participants visiting your website such that the information sent to and from the Tool is encrypted, enabling people to visit https versions of your website.
 
-## Option 3 - Use a subdomain of our website
-
-The third option is to use a subdomain of the studysocial.media website that the developers of the mock social media website project maintain. We will consider this on a very limited basis, and encourage you to [e-mail Arvin](mailto:arvin.jagayat@ryerson.ca) to inquire.
+Practically, using a domain name that has semantic meaning will help the domain name you choose look legitimate and trustable to participants.

@@ -12,7 +12,7 @@ Data can be downloaded by going to the Data tab in the admin portal. On this pag
 * **Download JSON** allows you to download more comprehensive data in a .JSON format.
 * **Download Media** allows you to download a zip file of user-submitted media (e.g., uploaded profile photos, attachments to posts created by participants).
 
-# CSV data
+## CSV data
 
 The .csv data contains a subset of what we believe is the most important data from participants in an easy-to-parse and easy-to-analyze format that most researchers will be familiar with. The data in the columns are the following:
 
@@ -52,7 +52,32 @@ The .csv data contains a subset of what we believe is the most important data fr
 If you see extra-long post IDs that show up in your data and (likely) are not ones you assigned to post stimuli, these are posts that participants made themselves. Every time a participant posts, their post is automatically assigned a randomly generated and very long post ID. Thus, if you see a long post ID that looks something like `18b97229-d945-46f1-aeec-947ba9f1b165` in the `LIKE` column, it means that participants made a new post and then liked their own post.
 :::
 
-# JSON data
+## Analyses
+
+Once you have your study data, one of the most basic types of analyses you will want to do is to count the number of times a given subset of the post stimuli was interacted with. Below is some sample R code for doing this.
+
+```
+# Install required packages
+
+install.packages(c("tidyverse","dplyr","stringr","stringi"))
+
+# Load required packages
+
+library(tidyverse)
+library(stringr)
+library(dplyr)
+library(stringi)
+
+# Creates a vector (i.e., a list) of the post IDs that you want to count the number of a given interactions with. The example below is a variable called "misinfo" which is a list of the post IDs for all posts which are misinformation (101, 102, 103, and 104).
+
+misinfo <- c("101", "102", "103", "104")
+
+# Adds a new variable to the dataset that is a count of the number of posts from the vector that were interacted with a for a given interaction type. In the example below, for the dataset named "dataset", a new variable called "misinfoCount" is created that is a count of the unique number of post IDs from the "misinfo" list which were liked (using the "LIKE" variable, which could be replaced or repeated with any interaction type you want).
+
+dataset %>% mutate(misinfoCount = sapply(str_extract_all(dataset$LIKE, misinfo), function(i)length(unique(i)))) -> dataset
+```
+
+## JSON data
 
 The .json data contains all of the raw data collected from participants, in a format that isn't as easily parsed.
 
@@ -60,6 +85,6 @@ The .json data contains all of the raw data collected from participants, in a fo
 This section is under construction. Please check back later. In the future, this section will contain detailed explanations of all the data types collected and template code for parsing and analyzing it.
 :::
 
-# Media data
+## Media data
 
 The media data contains all of the photos and videos participants may have uploaded (e.g., profile photos submitted during registration, attachments to posts) in a .zip file. Profile photos will be named according to the unique field IDs that they are associated with, and photos and videos attached to posts that participants make will be named according to the unique media IDs that are generated for them.

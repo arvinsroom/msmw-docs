@@ -22,6 +22,9 @@ sidebar_position: 10
 * [Social Media TestDrive](https://socialmediatestdrive.org/)
 * [Truman Platform](https://github.com/cornellsml/truman)
 
+**After my 12 month trial of Amazon's Free Tier is up, how much does it cost to run the Mock Social Media Website Tool?**
+> Exact pricing will vary based on your region and usage, so I cannot give a specific estimate. However, when I set up second EC2 and RDS instances for creating tutorials, I was charged roughly $35 CAD per month they were active.
+
 :::tip Have a question that isn't answered here?
 
 Feel free to shoot Arvin an e-mail at arvin.jagayat@ryerson.ca !

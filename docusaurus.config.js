@@ -10,6 +10,13 @@ module.exports = {
   organizationName: 'arvinsroom', // Usually your GitHub org/user name.
   projectName: 'msmw-docs', // Usually your repo name.
   themeConfig: {
+    algolia: {
+      apiKey: '70994d69e5aa0bffded59b7585f585ff',
+      indexName: 'docusaurus-index',
+      appId: '2QO2JGTD3X',
+      contextualSearch: true,
+      placeholder: 'What are you looking for?',
+    },
     navbar: {
       title: 'Mock Social Media Website Tool',
       logo: {

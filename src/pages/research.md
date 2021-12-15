@@ -18,6 +18,8 @@ Stay tuned!
 
 ## In Progress
 
-Jagayat, A., Pun, C., & Choma, B.L. User reputation indicators as means of reducing the spread of misinformation on social media.
+Jagayat, A., Choma, B.L., & Beebe, J. (forthcoming). Mitigating disinformation at the front-lines.
 
-Jagayat, A., Choma, B.L., & Beebe, J. Mitigating disinformation at the front-lines.
+Jagayat, A., Pun, C., & Choma, B.L. (forthcoming). User reputation indicators as means of reducing the spread of misinformation on social media.
+
+Schäfer, S., Rebasso, I., Boyer, M. & Planitzer, A. (forthcoming). Hate Speech as a fuel for social disintegration? Effects of hate speech and counter speech on implicit and explicit stereotypes, social distancing and polarized attitudes. 

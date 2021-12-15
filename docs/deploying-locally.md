@@ -6,6 +6,10 @@ sidebar_position: 3
 
 You can deploy the tool locally on any device running Windows, Mac, or Linux operating systems, and using the following steps. To inexperienced users, this whole process should take under two hours.
 
+You can find a video tutorial going through the whole process here:
+
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/JqqdSUUEqz4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Installing required software
 
 First, you will need to install the software required to deploy the study.
