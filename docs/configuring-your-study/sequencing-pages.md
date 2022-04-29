@@ -1,8 +1,8 @@
 ---
+id: sequencing-pages
+title: Sequencing Pages
 sidebar_position: 4
 ---
-
-# Sequencing Pages
 
 Now that you have created all of the pages that you need for a condition, you can define the order in which participants see the pages using the **Study Flow** settings (i.e., the flow from one page to another) in the sidebar.
 

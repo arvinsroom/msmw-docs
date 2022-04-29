@@ -1,4 +1,5 @@
 ---
+id: contact
 title: Contact
 description: Contact us if you have any questions!
 hide_table_of_contents: true

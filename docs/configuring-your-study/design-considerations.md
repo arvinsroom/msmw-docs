@@ -1,8 +1,8 @@
 ---
+id: design-considerations
+title: Design Considerations
 sidebar_position: 10
 ---
-
-# Design Considerations
 
 Below are some things to consider for your study design, based on what we have learned from developing the tool and deploying studies using it.
 

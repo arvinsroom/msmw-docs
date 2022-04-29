@@ -1,4 +1,5 @@
 ---
+id: research
 title: Research
 description: Examples of research using the tool
 hide_table_of_contents: false

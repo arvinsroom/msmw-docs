@@ -1,8 +1,8 @@
 ---
+id: data
+title: Data
 sidebar_position: 8
 ---
-
-# Data
 
 Data can be downloaded by going to the Data tab in the admin portal. On this page, you can a table with the following columns with buttons to download their respective data:
 

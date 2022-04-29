@@ -1,8 +1,8 @@
 ---
+id: renewing-ssl
+title: Renewing SSL Certificates
 sidebar_position: 3
 ---
-
-# Renewing SSL Certificates
 
 Unfortunately, due to a current technical issue with the website, SSL certificates for online deployments of the Mock Social Media Website Tool need to be manually renewed every 90 days. If they are not renewed, browsers will not be able to access an `https://` version of your website, which are more secure than `http://` versions. Many browsers will even warn users against visiting `http://` versions of websites, which will can cause unwanted technical issues or barriers to participation in recruiting. Thankfully, renewing the SSL certificate for your website is painless and takes a few minutes.
 

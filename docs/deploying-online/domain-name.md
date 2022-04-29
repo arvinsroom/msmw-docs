@@ -1,9 +1,8 @@
 ---
+id: domain-name
+title: Getting a Domain Name
 sidebar_position: 1
-sidebar_label: Getting a Domain Name
 ---
-
-# Getting a Domain Name
 
 For participants to be able to access your tool on the internet, you will need a domain name, which is basically an internet address for *where* your website it (e.g., `https://studysocial.media/`). This is not the same as web hosting, which actually stores the contents of your website and will be handled by Amazon Web Services in this tutorial.
 

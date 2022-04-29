@@ -1,8 +1,8 @@
 ---
+id: embedding-into-qualtrics
+title: Embedding into Qualtrics or Other Websites
 sidebar_position: 4
 ---
-
-# Embedding in Qualtrics or Other Websites
 
 You are able to embed the entire Tool within a Qualtrics study using custom HTML that embeds the website you have deployed online. This avoids having to redirect participants to different URLs if you are using both Qualtrics and the tool.
 

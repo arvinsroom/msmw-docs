@@ -1,9 +1,8 @@
 ---
+id: setting-up-aws
+title: Setting up Amazon Web Services
 sidebar_position: 2
-sidebar_label: Setting up Amazon Web Services
 ---
-
-# Setting up Amazon Web Services
 
 In order to deploy the Tool online, you will need a place online to store the Tool's files as well as a database to store its data. For this, we will be making use of Amazon Web Services (AWS), a suite of tools offered by Amazon. The instructions below are somewhat specific to using AWS, but the Tool can very similarly be set up on any other online cloud computing platform (e.g., Google Cloud, Microsoft Azure, your own custom solution) because the underlying technologies the Tool depends on are generic and widely available.
 

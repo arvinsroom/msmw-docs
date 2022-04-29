@@ -1,8 +1,8 @@
 ---
+id: social-media-pages
+title: Social Media Pages
 sidebar_position: 2
 ---
-
-# Social Media Pages
 
 :::caution Under construction
 This section is under construction. Please check back later. In the future, a template post spreadsheet will be added here with specific details about what each column in the spreadsheet specifies.

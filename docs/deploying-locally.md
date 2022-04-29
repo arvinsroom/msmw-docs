@@ -1,8 +1,8 @@
 ---
+id: deploying-locally
+title: Deploying Locally
 sidebar_position: 3
 ---
-
-# Deploying Locally
 
 You can deploy the tool locally on any device running Windows, Mac, or Linux operating systems, and using the following steps. To inexperienced users, this whole process should take under two hours.
 

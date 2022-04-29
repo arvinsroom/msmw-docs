@@ -1,8 +1,8 @@
 ---
+id: faq
+title: Frequently Asked Questions
 sidebar_position: 10
 ---
-
-# Frequently Asked Questions
 
 **Is the tool open-source? What are the rules for using. modifying, and redistributing the tool?**
 > Yes! This project is licensed under the [Apache License 2.0](https://choosealicense.com/licenses/apache-2.0/). The choice of license was based on the software dependencies that the tool is based upon, and you can read the license at the link to better understand the rights for use.

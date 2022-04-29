@@ -1,4 +1,5 @@
 ---
+id: people
 title: People
 description: Learn more about the people behind the tool!
 hide_table_of_contents: false

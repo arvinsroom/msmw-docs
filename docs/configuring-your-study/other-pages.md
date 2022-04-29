@@ -1,4 +1,6 @@
 ---
+id: other-pages
+title: Other Pages
 sidebar_position: 3
 ---
 

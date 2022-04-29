@@ -1,8 +1,8 @@
 ---
+id: study-structure
+title: Study Structure
 sidebar_position: 1
 ---
-
-# Study Structure
 
 Studies using the tool are structured into **conditions**, each of which are comprised of a series of **pages**. The mock social media website interface is just one of several different page types that can be organized into a sequence for participants to interact with. Some pages, particularly the multiple choice and open text pages, can have several components within them.
 

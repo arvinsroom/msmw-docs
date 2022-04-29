@@ -1,9 +1,8 @@
 ---
-sidebar_label: Future Development
+id: future-development
+title: Future Development
 sidebar_position: 11
 ---
-
-# Future Development of the Tool
 
 We intend to continue developing this tool over time, but with the release of this tool are hitting a pause so that we can support current research, listen to researcher feedback, and further solidify the foundation before we move forward.
 

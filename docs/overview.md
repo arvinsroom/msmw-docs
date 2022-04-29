@@ -1,8 +1,8 @@
 ---
+id: overview
+title: Overview
 sidebar_position: 2
 ---
-
-# Overview
 
 The Mock Social Media Website Tool is web-based, meaning that in order to create and customize studies, as well as for people to participate with those studies, they need to be accessed via a web browser. However, this does not necessarily mean that the website needs to be deployed to the *Internet*. The tool works the exact same whether you choose to deploy locally or online.
 
