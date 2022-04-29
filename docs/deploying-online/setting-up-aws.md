@@ -35,7 +35,7 @@ Finally, **you MUST have already obtained a domain name at this point to proceed
 
 ## Getting Started with Amazon Web Services
 
-To start, you will need to **sign up for an Amazon Web Services Free Tier account**, which you can do [here](https://aws.amazon.com/free/). The Free Tier will provide you with everything you will need to host the Tool, for free, for 12 months from the time you start adding the necessary services. Afterwards, you will be charged based upon your usage of the relevant services from Amazon, which will be minimal (estimated ~$35 CAD/month) or zero if you choose to turn the services off for the time that you are not using the Tool. You will need to provide Amazon with a credit card on record just in case you go over the limits of what their free services allow, but this is unlikely. You can find a tutorial on setting up AWS accounts by Amazon [here](https://youtu.be/v3WLJ_0hnOU), for your reference.
+To start, you will need to **sign up for an Amazon Web Services Free Tier account**, which you can do [here](https://aws.amazon.com/free/). The Free Tier will provide you with everything you will need to host the Tool, for free, for 12 months from the time you start adding the necessary services. Afterwards, you will be charged based upon your usage of the relevant services from Amazon, which will be minimal (estimated ~$35 CAD/month) or zero if you choose to turn the services off for the time that you are not using the Tool. You will need to provide Amazon with a credit card on record just in case you go over the limits of what their free services allow, but this is unlikely. In this tutorial, we will also be making use of Amazon's Route 53 to simplify the setup process, which does cost a few cents-to-dollars every month to use. You can find a tutorial on setting up AWS accounts by Amazon [here](https://youtu.be/v3WLJ_0hnOU), for your reference.
 
 Once you have your account and are on the AWS Management console page (should have a URL containing `aws.amazon.com/console/home`) you should **change your server location to that which you are located in and/or sampling from**. You can do this by going to the upper right of the page, where to the left of the Support dropdown, there will be another dropdown that is labelled with the server location you are connected to. For example, because I am in Canada, I clicked that dropdown and selected Canada (Central). Choosing a server that is close to the population you are sampling from will reduce the latency between your participants and the server; meaning that they will be able to load the website faster. The difference this makes is often minimal, but every bit helps as internet access and speeds vary from person-to-person.
 
@@ -166,6 +166,8 @@ You may need to navigate away from and back to the Elastic IPs settings page to 
 ## Connecting your domain name with Route 53
 
 Now that the EC2 instance has an IP address associated with it so that it can be accessed, we can associate the domain name with the instance so that it is easier and safer to navigate to (vs. just an IP address). To do this, we will give Amazon permission to manage the domain name and connect it to our Amazon EC2 storage. This is not the only way to go about this, but it does save additional steps which is why we will focus on this one method.
+
+However, it is worth noting that use of Amazon's Route 53 will incur some minor costs on the researcher (in the cents-to-dollars) as it is not included in Amazon's Free Tier of services.
 
 ### Modify DNS records in your registrar settings
 

@@ -22,4 +22,6 @@ Jagayat, A., Choma, B.L., & Beebe, J. (forthcoming). Mitigating disinformation a
 
 Jagayat, A., Pun, C., & Choma, B.L. (forthcoming). User reputation indicators as means of reducing the spread of misinformation on social media.
 
+Daley, J.S., Masse, L., Sanchez, S., Castillo Silva, L.I., & Bodenhausen, G.V. (forthcoming). Shades of Persuasion: The effect of skin tone on public social influence.
+
 Schäfer, S., Rebasso, I., Boyer, M. & Planitzer, A. (forthcoming). Hate Speech as a fuel for social disintegration? Effects of hate speech and counter speech on implicit and explicit stereotypes, social distancing and polarized attitudes. 
